@@ -14,27 +14,25 @@ const VideoCard = ({ video }) => {
     <div className=" h-[400px]  shadow-sm  dark:bg-[#000000] ">
       <Link className="" to={`/video/${video?.id?.videoId}`}>
         <img
-          className="w-full h-[65%] rounded-xl"
-          src={`${video?.snippet?.thumbnails?.high?.url}`}
+          className="w-full h-[65%] rounded-2xl"
+          src={`${video?.snippet?.thumbnails?.medium?.url}`}
           alt={video?.snippet?.title}
         />
       </Link>
-      <div className="  md:p-1  relative ">
-      
-        
+      <div className="  md:p-1  relative ">       
         
         <Link to={`/video/${video?.id.videoId}`} className="text-white py-7">
-          <p className=" text-[#e3d9d920] dark:text-white font-bold x">
-            {video?.snippet?.title }
+          <p className=" text-[#e3d9d920] dark:text-gray-100 font-semibold x">
+            {video?.snippet?.title }...
           </p>
         </Link>
         <Link className="absolute mt-3" to={`/channel/${video?.snippet?.channelId}` }>
-          <div className=" text-sm text-[#fff]  font-semibold dark:text-[#eae8e8ec] flex items-center ">
+          <div className=" text-sm text-gray-800  font-semibold dark:text-gray-100 flex items-center ">
             {`${video?.snippet?.channelTitle}`}{" "}
 
-            <span className="text-[7px] ml-2 flex text-gray-400 font-bold">
+            <span className="text-sm ml-2 flex text-gray-400 font-bold">
               
-              <VerifiedIcon  className="text-sm"/>
+              <VerifiedIcon style={{fontSize:"16px"}} />
             </span>            
           </div>
           

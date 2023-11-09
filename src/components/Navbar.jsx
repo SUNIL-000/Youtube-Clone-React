@@ -6,6 +6,7 @@ import SearchBar from "./SearchBar";
 import IconBar from "./IconBar";
 import LogoBar from "./LogoBar";
 
+
 const Navbar = () => {
   
 

@@ -42,7 +42,7 @@ const ChannelCardDetails = () => {
       </div>
 
 
-      <div className="grid  grid-cols-1 sm:grid-cols-2 md:grid-cols-3 mx-[60px] md:mx-[12px]  gap-7">
+      <div className="grid  grid-cols-1 sm:grid-cols-2 md:grid-cols-3 mx-[60px] md:mx-[30px]  gap-3">
        {
         channelvideos.map((items)=>{
           return  <VideoCard video={items}/>

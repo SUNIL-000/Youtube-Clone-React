@@ -1,6 +1,5 @@
 import React from 'react'
 import VideoCallIcon from '@mui/icons-material/VideoCall';
-import CloseIcon from '@mui/icons-material/Close';
 import NotificationsActiveIcon from '@mui/icons-material/NotificationsActive';
 import MicIcon from '@mui/icons-material/Mic';
 const IconBar = () => {
